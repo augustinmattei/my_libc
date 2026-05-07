@@ -7,6 +7,8 @@
     #define MY_STRING_H_
 
     #define NULL ((void *)0)
+    #define ASCII_LOW_LIM 0
+    #define ASCII_HIGH_LIM 126
 
 typedef unsigned long size_t;
 

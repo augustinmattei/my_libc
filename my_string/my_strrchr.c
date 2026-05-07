@@ -15,7 +15,7 @@ char *my_strrchr(const char *string, int searchedChar)
 {
     size_t str_size = my_strlen(string);
 
-    if (searchedChar < 0 || searchedChar > 126 || string == NULL)
+    if (searchedChar < ASCII_LOW_LIM || searchedChar > ASCII_HIGH_LIM || string == NULL)
         return NULL;
     for (; str_size >= 0; str_size--)
         if (string[str_size] == searchedChar)

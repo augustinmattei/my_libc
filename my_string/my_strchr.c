@@ -13,7 +13,7 @@
 */
 char *my_strchr(const char *string, int searchedChar)
 {
-    if (searchedChar < 0 || searchedChar > 126 || string == NULL)
+    if (searchedChar < ASCII_LOW_LIM || searchedChar > ASCII_HIGH_LIM || string == NULL)
         return NULL;
     for (int i = 0; string[i] != '\0'; i++)
         if (string[i] == searchedChar)
