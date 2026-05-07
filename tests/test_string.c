@@ -4,7 +4,6 @@
 
 #include <criterion/criterion.h>
 #include "../my_string/my_string.h"
-#include <stdio.h>
 
 Test(my_strchr, null_string)
 {
