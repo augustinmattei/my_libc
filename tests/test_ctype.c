@@ -14,7 +14,7 @@ Test(my_isalnum, not_alphanum_char)
 
 Test(my_isalnum, alphanum_char)
 {
-    cr_assert_eq(my_isalnum('a'), true);
+    cr_assert_eq(my_isalnum('T'), true);
 }
 
 Test(my_isalpha, not_alpha_char)
@@ -24,7 +24,7 @@ Test(my_isalpha, not_alpha_char)
 
 Test(my_isalpha, alpha_char)
 {
-    cr_assert_eq(my_isalpha('a'), true);
+    cr_assert_eq(my_isalpha('B'), true);
 }
 
 Test(my_isblank, not_blank_char)
@@ -94,7 +94,7 @@ Test(my_ispunct, not_punct_char)
 
 Test(my_ispunct, punct_char)
 {
-    cr_assert_eq(my_ispunct('.'), true);
+    cr_assert_eq(my_ispunct('~'), true);
 }
 
 Test(my_isspace, not_space_char)
