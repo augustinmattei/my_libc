@@ -13,6 +13,6 @@
  */
 bool my_isalpha(int character)
 {
-    return (('a' <= character <= 'z') ||
-        ('A' <= character <= 'Z'));
+    return (('a' <= character && character <= 'z') ||
+        ('A' <= character && character <= 'Z'));
 }

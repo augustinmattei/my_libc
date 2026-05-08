@@ -13,5 +13,5 @@
  */
 bool my_isprint(int character)
 {
-    return (0x21 <= character <= 0x7E);
+    return (0x21 <= character && character <= 0x7E);
 }

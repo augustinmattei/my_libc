@@ -13,6 +13,6 @@
  */
 bool my_isspace(int character)
 {
-    return ((0x09 <= character <= 0x0D) ||
+    return ((0x09 <= character && character <= 0x0D) ||
         character == ' ');
 }

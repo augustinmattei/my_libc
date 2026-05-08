@@ -13,7 +13,7 @@
  */
 bool my_isxdigit(int character)
 {
-    return (('0' <= character <= '9') ||
-        ('A' <= character <= 'F') ||
-        ('a' <= character <= 'f'));
+    return (('0' <= character && character <= '9') ||
+        ('A' <= character && character <= 'F') ||
+        ('a' <= character && character <= 'f'));
 }

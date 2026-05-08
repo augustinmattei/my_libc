@@ -13,5 +13,5 @@
  */
 bool my_isupper(int character)
 {
-    return ('A' <= character <= 'Z');
+    return ('A' <= character && character <= 'Z');
 }

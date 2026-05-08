@@ -13,5 +13,5 @@
  */
 bool my_islower(int character)
 {
-    return ('a' <= character <= 'z');
+    return ('a' <= character && character <= 'z');
 }

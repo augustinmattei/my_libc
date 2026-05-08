@@ -13,8 +13,8 @@
  */
 bool my_ispunct(int character)
 {
-    return ((0x21 <= character <= 0x2F) ||
-        (0x3a <= character <= 0x40) ||
-        (0x5B <= character <= 0x60) ||
-        (0x7B <= character <= 0x7E));
+    return ((0x21 <= character && character <= 0x2F) ||
+        (0x3a <= character && character <= 0x40) ||
+        (0x5B <= character && character <= 0x60) ||
+        (0x7B <= character && character <= 0x7E));
 }

@@ -13,7 +13,7 @@
  */
 bool my_isalnum(int character)
 {
-    return (('0' <= character <= '9') ||
-        ('a' <= character <= 'z') ||
-        ('A' <= character <= 'Z'));
+    return (('0' <= character && character <= '9') ||
+        ('a' <= character && character <= 'z') ||
+        ('A' <= character && character <= 'Z'));
 }

@@ -13,5 +13,5 @@
  */
 bool my_isdigit(int character)
 {
-    return ('0' <= character <= '9');
+    return ('0' <= character && character <= '9');
 }

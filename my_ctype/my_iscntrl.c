@@ -13,6 +13,6 @@
  */
 bool my_iscntrl(int character)
 {
-    return ((0x00 <= character <= 0x1F) ||
+    return ((0x00 <= character && character <= 0x1F) ||
         (character == 0x7F));
 }
