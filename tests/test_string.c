@@ -87,3 +87,60 @@ Test(my_strlen, basic_case)
 
     cr_assert_eq(basic_len, 12);
 }
+
+Test(my_strcmp, superior_case)
+{
+    char *sup = "Hello";
+    char *inf = "Aello";
+
+    cr_assert_eq(my_strcmp(sup, inf), 1);
+}
+
+Test(my_strcmp, inferior_case)
+{
+    char *n_inf = "Aello";
+    char *n_sup = "Hello";
+
+    cr_assert_eq(my_strcmp(n_inf, n_sup), -1);
+}
+
+Test(my_strcmp, equal_case)
+{
+    char *eq1 = "We are the same!";
+    char *eq2 = "We are the same!";
+
+    cr_assert_eq(my_strcmp(eq1, eq2), 0);
+}
+
+Test(my_strncmp, sup_case)
+{
+    char *sup_1 = "Above";
+    char *inf_1 = "Aaowe";
+
+    cr_assert_eq(my_strncmp(sup_1, inf_1, 3), 2);
+}
+
+Test(my_strncmp, inf_case)
+{
+    char *inf_2 = "Aaowe";
+    char *sup_2 = "Above";
+
+    cr_assert_eq(my_strncmp(inf_2, sup_2, 3), -2);
+}
+
+Test(my_strncmp, partial_equal)
+{
+    char *p_eq_1 = "We're almost equal...!";
+    char *p_eq_2 = "We're almost equal?";
+
+    cr_assert_eq(my_strncmp(p_eq_1, p_eq_2, 18), 0);
+}
+
+Test(my_strncmp, fully_equal_count_too_big)
+{
+    char *f_eq_1 = "Yay, we're the same!";
+    char *f_eq_2 = "Yay, we're the same!";
+
+    cr_assert_eq(my_strncmp(f_eq_1, f_eq_2, 54), 0);
+}
+

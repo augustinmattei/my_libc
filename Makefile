@@ -1,6 +1,8 @@
 SRC	:=	my_string/my_strchr.c \
 		my_string/my_strrchr.c \
 		my_string/my_strlen.c \
+		my_string/my_strcmp.c \
+		my_string/my_strncmp.c \
 		my_ctype/my_isalnum.c \
 		my_ctype/my_isalpha.c \
 		my_ctype/my_isblank.c \
@@ -23,8 +25,12 @@ TEST_OBJ	=	$(TEST_SRC:.c=.o)
 
 NAME	:=	unit_tests
 
+LDLIBS	:=	-lcriterion
+
+CC	:=	gcc
+
 tests:	$(TEST_OBJ)
-	gcc -o $(NAME) $(SRC) $(TEST_OBJ) --coverage -lcriterion
+	$(CC) -o $(NAME) $(SRC) $(TEST_OBJ) --coverage $(LDLIBS)
 	-./unit_tests
 
 clean:
