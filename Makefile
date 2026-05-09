@@ -36,7 +36,9 @@ tests:	$(TEST_OBJ)
 clean:
 	rm -f *.gcda
 	rm -f *.gcno
-	rm -f tests/*.o
+	rm -f $(TEST_OBJ)
+	rm -f tests/*.gcda
+	rm -f tests/*.gcno
 
 fclean:	clean
 	rm -f $(NAME)
