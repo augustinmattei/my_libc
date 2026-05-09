@@ -14,5 +14,7 @@
 char *my_strchr(const char *string, int searchedChar);
 size_t my_strlen(const char *string);
 char *my_strrchr(const char *string, int searchedChar);
+int my_strcmp(const char *l_str, const char *r_str);
+int my_strncmp(const char *l_str, const char *r_str, size_t count);
 
 #endif /* !MY_STRING_H_ */
